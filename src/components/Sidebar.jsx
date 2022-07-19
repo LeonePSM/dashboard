@@ -30,6 +30,7 @@ const Sidebar = () => {
         </Link>
         <TooltipComponent content="Menu" position='BottomCenter'>
           <button type='button'
+
           onClick={() => setActiveMenu(
             (prevActiveMenu) => 
             !prevActiveMenu)}
@@ -50,6 +51,7 @@ const Sidebar = () => {
               to={`/${Link.name}`}
               key={Link.name}
               onClick={() => {}}
+
               className={({isActive}) => 
               isActive ? activeLink : normalLink}
               >
